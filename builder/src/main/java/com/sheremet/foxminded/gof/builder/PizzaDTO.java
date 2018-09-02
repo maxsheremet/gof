@@ -10,6 +10,9 @@ public final class PizzaDTO {
     private final String mushrooms;
     private final String seafood;
 
+    /**
+     * Private!!!
+     */
     private PizzaDTO(String cheese, String bacon, String pineapple, String mushrooms, String seafood) {
         this.cheese = cheese;
         this.bacon = bacon;

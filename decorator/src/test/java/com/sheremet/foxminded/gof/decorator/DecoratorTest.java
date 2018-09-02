@@ -8,6 +8,9 @@ import static org.junit.Assert.assertThat;
 
 public final class DecoratorTest {
 
+    /**
+     * Creating 3 different variations of decorators.
+     */
     private final Decorator httpUppercaseReverseDecorator = new Decorator.HtmlDecorator(
             new Decorator.UppercaseDecorator(
                     new Decorator.ReverseDecorator(null)));

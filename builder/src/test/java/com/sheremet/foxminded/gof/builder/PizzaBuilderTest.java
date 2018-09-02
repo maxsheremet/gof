@@ -5,7 +5,6 @@ import org.junit.Test;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
 
-
 public final class PizzaBuilderTest {
     @Test
     public void testMeatFeastPizzaBuilder() {

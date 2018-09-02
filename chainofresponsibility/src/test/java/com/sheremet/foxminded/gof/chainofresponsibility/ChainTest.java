@@ -7,6 +7,9 @@ import static org.junit.Assert.assertThat;
 
 public class ChainTest {
 
+    /**
+     * Define the order in which the implementations are invoked.
+     */
     private final ChainLink chainLink = new ChainLink.FireChainLink(
             new ChainLink.AmbulanceChainLink(
                     new ChainLink.PoliceChainLink(

@@ -21,11 +21,11 @@ public interface Decorator {
 
         @Override
         public PersonDTO decorate(PersonDTO personDTO) {
-
+            //previous step if any
             PersonDTO person = (decorator == null)
                     ? personDTO
                     : decorator.decorate(personDTO);
-
+            //apply transformation for this decorator
             return new PersonDTO(
                     reverse(person.getName()),
                     reverse(person.getSurname()),
@@ -50,11 +50,11 @@ public interface Decorator {
 
         @Override
         public PersonDTO decorate(PersonDTO personDTO) {
-
+            //previous step if any
             PersonDTO person = (decorator == null)
                     ? personDTO
                     : decorator.decorate(personDTO);
-
+            //apply transformation for this decorator
             return new PersonDTO(
                     person.getName().toUpperCase(),
                     person.getSurname().toUpperCase(),
@@ -76,11 +76,11 @@ public interface Decorator {
 
         @Override
         public PersonDTO decorate(PersonDTO personDTO) {
-
+            //previous step if any
             PersonDTO person = (decorator == null)
                     ? personDTO
                     : decorator.decorate(personDTO);
-
+            //apply transformation for this decorator
             return new PersonDTO(
                     toHtml(person.getName()),
                     toHtml(person.getSurname()),

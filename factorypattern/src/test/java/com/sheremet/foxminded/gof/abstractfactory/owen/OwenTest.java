@@ -2,7 +2,6 @@ package com.sheremet.foxminded.gof.abstractfactory.owen;
 
 import org.junit.Test;
 
-
 import java.util.UUID;
 
 import static org.hamcrest.CoreMatchers.is;
