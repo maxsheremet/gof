@@ -1,0 +1,3 @@
+[submodule "gofg"]
+	path = gofg
+	url = https://github.com/maxsheremet/gof.git
