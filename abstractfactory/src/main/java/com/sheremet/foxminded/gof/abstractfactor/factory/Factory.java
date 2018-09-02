@@ -8,6 +8,9 @@ import java.util.stream.IntStream;
 
 import static java.util.stream.Collectors.toList;
 
+/**
+ * {@link Factory} to define all pieces for the game.
+ */
 public interface Factory {
 
     List<King> buildKing();
@@ -22,6 +25,9 @@ public interface Factory {
 
     List<Pawn> buildPawn();
 
+    /**
+     * Black impl.
+     */
     final class BlackFactory implements Factory {
 
         @Override
@@ -67,6 +73,9 @@ public interface Factory {
         }
     }
 
+    /**
+     * White impl.
+     */
     final class WhiteFactory implements Factory {
 
         @Override
@@ -110,6 +119,5 @@ public interface Factory {
                     .mapToObj(index -> new Pawn.WhitePawn())
                     .collect(toList());
         }
-
     }
 }

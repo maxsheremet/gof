@@ -8,6 +8,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * {@link AbstractFactory} using whatever factory to create a map of pieces.
+ */
 public final class AbstractFactory {
 
     private final Map<Piece.Type, List<? extends Piece>> pieces = new HashMap<>();

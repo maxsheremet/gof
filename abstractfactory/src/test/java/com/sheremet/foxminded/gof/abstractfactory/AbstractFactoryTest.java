@@ -2,7 +2,6 @@ package com.sheremet.foxminded.gof.abstractfactory;
 
 import com.sheremet.foxminded.gof.abstractfactor.factory.Factory;
 import com.sheremet.foxminded.gof.abstractfactor.factory.abstractfactory.AbstractFactory;
-import com.sheremet.foxminded.gof.abstractfactory.piece.Queen;
 import com.sheremet.foxminded.gof.abstractfactory.piece.piece.Piece;
 import org.junit.Test;
 

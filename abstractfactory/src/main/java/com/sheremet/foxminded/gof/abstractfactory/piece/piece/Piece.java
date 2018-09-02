@@ -1,17 +1,22 @@
 package com.sheremet.foxminded.gof.abstractfactory.piece.piece;
 
-import java.util.UUID;
-
+/**
+ * Common behaviour of all {@link Piece}.
+ */
 public interface Piece {
+    /**
+     * Contract.
+     */
     Colour getColour();
 
     Type getType();
 
-    default String getId() {
-        return UUID.randomUUID().toString();
+    /**
+     * Shared enums.
+     */
+    enum Colour {
+        BLACK, WHITE;
     }
-
-    enum Colour {BLACK, WHITE;}
 
     enum Type {
         KING(1), QUEEN(1), CASTLE(2), KNIGHT(2), BISHOP(2), PAWN(8);
