@@ -24,6 +24,14 @@
         <module>bridge</module>
         <module>decorator</module>
         <module>chainofresponsibility</module>
+        <module>command</module>
+        <module>mediator</module>
+        <module>momento</module>
+        <module>observer</module>
+        <module>template</module>
+        <module>state</module>
+        <module>strategy</module>
+        <module>visitor</module>
     </modules>
 
     <dependencies>
